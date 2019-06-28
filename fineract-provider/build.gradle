@@ -35,6 +35,7 @@ buildscript {
      classpath 'org.apache.openjpa:openjpa-all:2.4.1'
      classpath 'at.schmutterer.oss.gradle:gradle-openjpa:0.2.0'
      classpath 'gradle.plugin.org.nosphere.apache:creadur-rat-gradle:0.2.2'
+	 classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.7.1"
   }
 }
 
@@ -51,6 +52,7 @@ apply plugin: 'java'
 apply plugin: 'openjpa'
 apply plugin: 'pmd'
 apply plugin: 'findbugs'
+apply plugin: "org.sonarqube"
 
 /* define the valid syntax level for source files */
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -539,3 +541,4 @@ springBoot {
 bootRepackage {
     mainClass = 'org.apache.fineract.ServerWithMariaDB4jApplication'
 }
+

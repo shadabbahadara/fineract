@@ -3,7 +3,6 @@
 **/.project
 **/build
 *.class
-*.jar
 *.war
 *.ear
 *.iml
