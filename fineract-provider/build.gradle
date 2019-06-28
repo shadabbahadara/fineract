@@ -311,9 +311,9 @@ task licenseFormatBuildScripts (type:nl.javadude.gradle.plugins.license.License)
 licenseFormat.dependsOn licenseFormatBuildScripts
 
 tomcatRun {
-    httpPort = 9090
-    httpsPort = 9443
-    stopPort = 9091
+    httpPort = 8080
+    httpsPort = 8443
+    stopPort = 8081
     stopKey=   'stopKey'
     enableSSL = true
     configFile = file('src/test/resources/META-INF/context.xml')
