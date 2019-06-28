@@ -1,0 +1,12 @@
+**/.gradle
+**/.settings
+**/.project
+**/build
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+**/catalina.base_IS_UNDEFINED
